@@ -1,23 +1,17 @@
-$(function(){
-  var input = $('input');
+$(function() {
+  var input = $('.input');
+  var button = $('.button');
 
-  input.mouseenter(function(){
-    $(this).parent().find('.title').animate(
-      {
-        opacity : '1',
-        height: '22px',
-        width: '250px',
-    },
-     500);
+  input.mouseenter(function() {
+    $(this).parent().find('.title').addClass('animate');
   });
 
-  input.mouseleave(function(){
-    $(this).parent().find('.title').animate(
-      {
-        opacity : '0',
-        height: '0',
-        width: '0',
-    },
-     500);
+  input.mouseleave(function() {
+    $(this).parent().find('.title').removeClass('animate');
   });
-})
+
+  button.click(function() {
+    var title = $('.title');
+    $(title).toggleClass('animate');
+  });
+});

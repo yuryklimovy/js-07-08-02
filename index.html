@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
@@ -7,26 +8,29 @@
   <script src="http://code.jquery.com/jquery-1.12.3.js"></script>
   <script src="js/script.js" charset="utf-8"></script>
 </head>
+
 <body>
   <form>
-  <fieldset>
-    <div class = "wrapper">
-      <label for="firstname">Firstname</label>
-      <input id="firstname" name="firstname">
-      <div class="title">Please provide your firstname</div>
+    <fieldset>
+      <div class="wrapper">
+        <label for="firstname">Firstname</label>
+        <input class='input' id="firstname" name="firstname">
+        <div id="title" class="title">Please provide your firstname</div>
 
-    </div>
-    <div class = "wrapper">
-      <label for="lastname">Lastname</label>
-      <input id="lastname" name="lastname">
-      <div class="title">Please provide also your lastname</div>
-    </div>
-    <div  class = "wrapper">
-      <label for="address">Address</label>
-      <input id="address" name="address" >
-      <div class="title">Ysour home or work addres</div>
-    </div>
-  </fieldset>
-</form>
+      </div>
+      <div class="wrapper">
+        <label for="lastname">Lastname</label>
+        <input class='input' id="lastname" name="lastname">
+        <div id="title" class="title">Please provide also your lastname</div>
+      </div>
+      <div class="wrapper">
+        <label for="address">Address</label>
+        <input class='input' id="address" name="address">
+        <div id="title" class="title">Ysour home or work addres</div>
+      </div>
+    </fieldset>
+    <input class="button" type="button" name="name" value="Show help">
+  </form>
 </body>
+
 </html>
